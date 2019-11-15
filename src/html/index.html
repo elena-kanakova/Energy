@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- @if NODE_ENV='development' -->
+    <link rel="stylesheet" href="css/general.css">
+    <!-- @endif -->
+
+    <!-- @if NODE_ENV='production' -->
+    <link rel="stylesheet" href="css/base.css">
+    <!-- @endif -->
+</head>
+<body>
+<div id="wrapper">
+    @@include('./general/_header.html')
+    @@include('./index/_index-section-1.html')
+    @@include('./index/_index-section-2.html')
+    @@include('./index/_index-section-3.html')
+    @@include('./general/_footer.html')
+</div>
+
+<!-- @if NODE_ENV='development' -->
+<script src="libs/jquery-3.2.1.min.js"></script>
+<script src="libs/jquery.maskedinput.min.js"></script>
+<script src="js/scripts.js"></script>
+<!-- @endif -->
+
+<!-- @if NODE_ENV='production' -->
+<script src="libs/jquery-3.2.1.min.js"></script>
+<script src="libs/jquery.maskedinput.min.js"></script>
+<script src="js/scripts.min.js"></script>
+<!-- @endif -->
+</body>
+</html>

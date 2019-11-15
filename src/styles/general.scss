@@ -1,0 +1,66 @@
+@import 'base/reset';
+@import 'base/fonts';
+
+/* Переменные */
+@import 'base/variables';
+
+/* Миксины */
+@import 'base/mixins';
+
+/* flex классы */
+.flex {
+  display: flex;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+html.fixed {
+  position: fixed;
+  width: 100%;
+  max-width: 1920px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*Контейнер для всего сайта */
+#wrapper {
+  z-index: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1920px;
+  padding-left: 0;
+  padding-right: 0;
+  @include auto;
+}
+
+// Общие блоки сайта
+@import "general_elements/header";
+@import "general_elements/footer";
+
+// Главная
+@import "index/section-1";
+@import "index/section-2";
+@import "index/section-3";
+
+//Контакты
+@import "contacts/section__content";
