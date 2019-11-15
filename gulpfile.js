@@ -14,7 +14,6 @@ var gulp = require('gulp'),
     imagemin = require('gulp-imagemin'),
     fileinclude = require('gulp-file-include'),
     plumber = require('gulp-plumber'),
-    pngquant = require('imagemin-pngquant'),
     imageminJpegRecompress = require('imagemin-jpeg-recompress');
 
 const autoprefixer = require('gulp-autoprefixer');
@@ -44,8 +43,8 @@ var path = {
         sass: 'src/styles/**/*.scss',
         scripts: 'src/scripts/**/*.js'
     },
-    clean_dev: ['src/css/*.css', 'src/index.html', 'src/shops.html', 'src/js/*.js'],
-    clean_prod: ['prod/css/*.css', 'prod/index.html', 'prod/shops.html', 'prod/js/*.js']
+    clean_dev: ['src/css/*.css', 'src/index.html', 'src/js/*.js'],
+    clean_prod: ['prod/css/*.css', 'prod/index.html', 'prod/js/*.js']
 };
 
 // Конфиги для локального вебсервера

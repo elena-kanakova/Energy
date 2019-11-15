@@ -1,0 +1,55 @@
+#index__section-1 {
+  position: relative;
+  width: 100%;
+  height: 905px;
+  padding: 0 130px 0 150px;
+  background: url("../img/image 14.jpg") center top no-repeat;
+  background-size: cover;
+
+  &:after {
+    @include pseudo(1,0,0,-355px,0);
+    width: 0;
+    height: 0;
+    border-top: 1260px solid rgba(0, 65, 140, 0.7);
+    border-right: 1440px solid transparent;
+  }
+
+  .section-1__content {
+    position: relative;
+    z-index: 2;
+    margin: 164px 0 0;
+    max-width: 600px;
+  }
+
+  .section-1__title {
+    h1 {
+      font: 32px/46px Rubik, sans-serif;
+      font-weight: bold;
+      color: white;
+      text-transform: uppercase;
+    }
+  }
+
+  .section-1__text {
+    p {
+      margin-top: 30px;
+      font: 18px Roboto, sans-serif;
+      font-weight: normal;
+      color: white;
+    }
+  }
+
+  .section-1__link {
+    margin-top: 45px;
+
+    button {
+      padding: 18px 36px;
+      font: 24px Roboto, sans-serif;
+      font-weight: normal;;
+      color: white;
+      background: none;
+      border: 1px solid white;
+      cursor: pointer;
+    }
+  }
+}
