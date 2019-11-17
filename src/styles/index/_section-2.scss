@@ -1,0 +1,94 @@
+#index__section-2 {
+  min-height: 1014px;
+
+  .section-2__content-wrap {
+    width: 720px;
+    height: 720px;
+    margin: -80px auto 0;
+    transform: rotate(-45deg);
+  }
+
+  .section-2__title {
+    h2 {
+      font: 58px Roboto, sans-serif;
+      font-weight: 900;
+      color: #5B84B5;
+    }
+  }
+
+  .section-2__element-1 {
+    position: relative;
+    width: 353px;
+    height: 353px;
+    align-items: center;
+    background: url("../../img/image16.png"), linear-gradient(0deg, rgba(77, 122, 175, 0.9), rgba(77, 122, 175, 0.9)) center center no-repeat;
+
+    &:after {
+      @include pseudo(1,67px,67px,0,0);
+      border-bottom: 1px solid white;
+      border-right: 1px solid white;
+    }
+
+    p {
+      font: 24px Roboto, sans-serif;
+      font-weight: normal;
+      color: white;
+      transform: rotate(45deg);
+    }
+  }
+
+  .section-2__element-2 {
+    position: relative;
+    width: 353px;
+    height: 353px;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(9, 133, 200, 0.35), rgba(9, 133, 200, 0.35)), linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../img/image18.png") center center no-repeat;
+
+    &:after {
+      @include pseudo(1,0,0,0,67px);
+      border-bottom: 1px solid white;
+    }
+
+    p {
+      font: 24px Roboto, sans-serif;
+      font-weight: normal;
+      color: white;
+      transform: rotate(45deg);
+    }
+  }
+
+  .section-2__element-3 {
+    position: relative;
+    width: 353px;
+    height: 353px;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(9, 133, 200, 0.35), rgba(9, 133, 200, 0.35)), linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/image20.png") center center no-repeat;
+
+    &:after {
+      @include pseudo(1,67px,0,67px,0);
+      border-right: 1px solid white;
+    }
+
+    p {
+      font: 24px Roboto, sans-serif;
+      font-weight: normal;
+      color: white;
+      transform: rotate(45deg);
+    }
+  }
+
+  .section-2__element-4 {
+    position: relative;
+    width: 353px;
+    height: 353px;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(9, 133, 200, 0.35), rgba(9, 133, 200, 0.35)), linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),  url("../../img/image19.png") center center no-repeat;
+
+    p {
+      font: 24px Roboto, sans-serif;
+      font-weight: normal;
+      color: white;
+      transform: rotate(45deg);
+    }
+  }
+}
