@@ -1,14 +1,18 @@
 #index__section-1 {
   position: relative;
   width: 100%;
-  height: 1082px;
+  max-width: 1920px;
+  height: 1437px;
   padding: 0 130px 0 150px;
-  background: url("../../img/image 14.jpg") center top no-repeat;
-  background-size: cover;
+  background: url("../../img/section-1_bg_triangle.svg") left top no-repeat, url("../../img/image 14.jpg") center top no-repeat;
+  background-size: contain, auto 75%;
 
-  &:after {
-
-  }
+  /*  &:after {
+      @include pseudo(1, 0, 0, -25%, auto);
+      width: 80%;
+      background: url("../../img/section-1_bg_triangle.svg") left top no-repeat;
+      background-size: contain;
+    }*/
 
   .section-1__content {
     position: relative;

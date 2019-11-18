@@ -1,4 +1,12 @@
+#wrapper {
+  background: url("../../img/section-3-4_bg-img.png") left bottom 184px no-repeat;
+  background-size: contain;
+}
+
 #index__section-3 {
+  width: 100%;
+  max-width: 1920px;
+  height: 100%;
   padding-top: 120px;
 
   .container {

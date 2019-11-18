@@ -1,10 +1,13 @@
 #index__section-2 {
+  width: 100%;
+  max-width: 1920px;
+  height: 100%;
   min-height: 1014px;
 
   .section-2__content-wrap {
     width: 720px;
     height: 720px;
-    margin: -80px auto 0;
+    margin: -400px auto 0;
     transform: rotate(-45deg);
   }
 
